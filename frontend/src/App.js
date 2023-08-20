@@ -48,6 +48,7 @@ function App() {
   const reflashHandler = (event) => {
     axios.get("/api/reflash").then((response) => {
       console.log("response", response);
+      // eslint-disable-next-line no-restricted-globals
       location.reload();
     });
   }
